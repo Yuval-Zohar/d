@@ -1,0 +1,221 @@
+﻿<!doctype html>
+<html lang="he">
+<head>
+    <meta charset="utf-8" />
+    <title>מוק</title>
+    <meta name="description" content="מוק" />
+    <meta name="keywords" content="מוק" />
+    <meta name="author" content="חלי בל, יובל זהר" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+    <!-- CSS -->
+    <link href="styles/reset.css" rel="stylesheet" />
+    <link href="styles/myStyle.css" rel="stylesheet" />
+    <link rel="icon" href="images/favicon.png">
+    <link rel="stylesheet" type="text/css" href="Fonts/OpenSans.css">
+    <link rel="stylesheet" type="text/css" href="styles/scrollup_pill.css">
+    <link rel="stylesheet" type="text/css" href="styles/animsition.css">
+
+    <!-- Scripts -->
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+    <script src="jScripts/animsition.js"></script>
+    <script src="jScripts/jquery.scrollUp.min.js"></script>
+    <script src="jScripts/JavaScript.js"></script>
+    <script src="jScripts/popUp.js"></script>
+
+</head>
+<body onload="popUp()">
+    <header>
+        <div id="blackTopNav">
+            <nav id="TopNav">
+                <ul>
+                    <li class="responsiveMenu"><a class="animsition-link" href="index.html" tab index="4"><div id="MenulLogo"><img src="images/moocLogoWhite.svg" /></div></a></li>
+                    <li class="responsiveMenu">
+                        <a href="#" style="padding-right: 2vw;">אסטרטגיות לימוד</a>
+                        <ul>
+                            <li><a href="aknaya.html" class="animsition-link">הקניית ידע</a></li>
+                            <li><a href="reflective.html" class="animsition-link">חשיבה רפלקטיבית</a></li>
+                            <li><a href="brainStorm.html" class="animsition-link">סיעור מוחות</a></li>
+                            <li><a href="conflict.html" class="animsition-link">פיתרון בעיות</a></li>
+                            <li><a href="caseStudy.html" class="animsition-link">חקר מקרה</a></li>
+                        </ul>
+                    </li>
+                    <li class="responsiveMenu">
+                        <a href="#" style="padding-right: 2vw;">דוגמאות תוכן</a>
+                        <ul>
+                            <li><a href="aknayaExm.html" class="animsition-link">הקניית ידע</a></li>
+                            <li><a href="reflectiveExm.html" class="animsition-link">חשיבה רפלקטיבית</a></li>
+                            <li><a href="brainStormExm.html" class="animsition-link">סיעור מוחות</a></li>
+                        </ul>
+                    </li>
+                    <li class="responsiveMenu">
+                        <button id="aboutButton" href="#aboutModal" class="modal-button">אודות</button>
+                    </li>
+                </ul>
+            </nav><div class="clear"></div>
+        </div>
+
+        <div id="yellowDiv">
+            <div class="animsition">
+                <!-- אנימציה -->
+                <div id="yellowHeader">
+                    <div id="yellowTitle">
+                        <h1>הקניית ידע</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div id="container">
+        <div id="whiteContainer" class="pagesWhiteContainer">
+
+            <!-- The Modal - about -->
+            <div id="aboutModal" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <span class="close">×</span>
+                        <h2>אודות</h2>
+                    </div>
+                    <div class="modal-body">
+                        <div id="aboutImage"><img src="images/moocLogo.svg" /></div>
+                        <div class="aboutText">אתר המשמש כלי עזר לפיתוח MOOC</div><br />
+                        <div class="aboutText">פרויקט גמר, תש"פ</div>
+                        <div id="hitLink"><a href="https://www.hit.ac.il/telem/overview" target="_blank">הפקולטה לטכנולוגיות למידה</a></div>
+                        <div class="creditBox">
+                            <div class="logoImg"><img src="images/hitLogo.jpg" /></div>
+                            <div class="creditText">
+                                <h4>צוות הפרויקט:</h4>
+                                חלי בל ויובל זהר
+                                <h4>מנחות:</h4>
+                                ד"ר חגית מישר-טל ורעות בכר
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="creditBox">
+                            <div class="logoImg"><img src="images/mofetLogo.jpg" /></div>
+                            <div class="creditText">
+                                בשיתוף עם מכון מופ"ת
+                                <br />
+                                נציגי הארגון: דורין עמר פסט, רותי סולומון<br />ואסף עמית
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <p>© כל הזכויות שמורות למכון הטכנולוגי חולון HIT</p>
+                    </div>
+                </div>
+            </div>
+            <!-- end of The Modal - about -->
+
+
+            <div class="grey4">הקניית ידע היא תהליך מתמשך, המורכב מרצף אירועי למידה. Robert Gagné הציע סדרת אירועים העוקבים אחר הוראות הדרכה שיטתיות, שכן תהליך העיצוב חולק את הגישה הביהביוריסטית ללמידה, תוך התמקדות בתהליך תוצאות או התנהגויות של הוראה או הדרכה.</div>
+            <div class="darkGrey2">כל אחת מתשעת ההוראות המופיעות מטה ומפרטות את התהליך, נועדו לעזרה ויישום שיטות להטמעה בהדרכה. אנו ממליצים להשתמש בתשע האירועים של Gagné, Briggs, and Wager (1992) בשילוב עם הטקסונומיה המתוקנת של בלום לעיצוב הדרכה מרתק ומשמעותי.</div>
+            <br /><br /><br /><br />
+            <div class="yellowDivRight">
+                <div class="yellowSquare">1</div>
+                <div class="yellowSquareText">עזרו לחניכים להבין מידע חדש על ידי קישור לנושא המוכר להם / נושא שאמור להיות להם ניסיון בו.</div>
+            </div>
+            <div class="greyArrow"></div>
+            <div class="yellowDivRight">
+                <div class="yellowSquare">2</div>
+                <div class="yellowSquareText"><b>ספקו</b> תמיכה בהדרכה לפי הצורך – לדוגמה פיגומים (סיבות, רמזים, גורמים) שיוכלו להסיר לאחר העמקה בתוכן או במשימה.</div>
+            </div>
+            <div class="greyArrow"></div>
+            <div class="yellowDivLeft">
+                <div class="yellowSquare">3</div>
+                <div class="yellowSquareText">שאלו את החניכים מה הם כן יודעים, ובצעו התאמות לתוכן</div>
+            </div>
+            <div class="clear"></div>
+
+            <div class="yellowDivRight">
+                <div class="yellowSquare">4</div>
+                <div class="yellowSquareText">שלבו ידע חדש עם דוגמאות מחיי היום יום</div>
+            </div>
+            <div class="greyArrow"></div>
+            <div class="yellowDivRight">
+                <div class="yellowSquare">5</div>
+                <div class="yellowSquareText">הטמיעו שאלות, חידונים וסקרים</div>
+            </div>
+            <div class="greyArrow"></div>
+            <div class="yellowDivLeft">
+                <div class="yellowSquare">6</div>
+                <div class="yellowSquareText">להקניית המיומנויות הנדרשות, עזרו לחניכים להטמיע ידע חדש</div>
+            </div>
+            <div class="clear"></div>
+
+            <!-- סקר גוגל פורמס -->
+            <div id="surveyDiv">
+                <iframe id="survey" src="https://docs.google.com/forms/d/e/1FAIpQLSfrA7YZfaAEAsF26no7JP-ooZNunk3s6Ay026QTt6aVFL9ylA/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">בטעינה…</iframe>
+            </div>
+
+            <a id="linkOriginalText" href="https://www.niu.edu/facdev/_pdf/guide/learning/gagnes_nine_events_instruction.pdf" target="_blank">
+                <div id="linkOriginal">
+                    קישור למאמר המקורי
+                </div>
+            </a>
+
+            <a id="exampleText" href="aknayaExm.html">
+                <div id="example">
+                    אני רוצה לראות דוגמה
+                </div>
+            </a>
+
+        </div>
+    </div>
+
+    <footer>
+        <div id="blackFooter">
+            <p>תוצר זה פותח במסגרת פרויקט גמר לתואר ראשון ב<a href="https://www.hit.ac.il/telem/overview" target="_blank">פקולטה לטכנולוגיות למידה</a>, HIT</p>
+        </div>
+    </footer>
+
+    <!-- סקריפט לאנימציה -->
+    <script>
+$(document).ready(function() {
+  $(".animsition").animsition({
+    inClass: 'zoom-in-sm',
+    outClass: 'zoom-out-sm',
+    inDuration: 3500,
+    outDuration: 1000,
+    linkElement: '.animsition-link',
+    // e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
+    loading: true,
+    loadingParentElement: 'body', //animsition wrapper element
+    loadingClass: 'animsition-loading',
+    loadingInner: '', // e.g '<img src="loading.svg" />'
+    timeout: false,
+    timeoutCountdown: 5000,
+    onLoadEvent: true,
+    browser: [ 'animation-duration', '-webkit-animation-duration'],
+    // "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
+    // The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
+    overlay : false,
+    overlayClass : 'animsition-overlay-slide',
+    overlayParentElement : 'body',
+    transition: function(url){ window.location.href = url; }
+  });
+});
+    </script>
+
+
+    <!-- סקריפט לחזרה למעלה -->
+    <script>
+$(function () {
+  $.scrollUp({
+    scrollName: 'scrollUp', // Element ID
+    topDistance: '300', // Distance from top before showing element (px)
+    topSpeed: 300, // Speed back to top (ms)
+    animation: 'slide', // Fade, slide, none
+    animationInSpeed: 200, // Animation in speed (ms)
+    animationOutSpeed: 200, // Animation out speed (ms)
+    scrollText: 'חזור למעלה', // Text for element
+    activeOverlay: false, // Set CSS color to display scrollUp active point, e.g '#00FFFF'
+  });
+});
+    </script>
+
+</body>
+</html>
