@@ -1,0 +1,299 @@
+﻿<!doctype html>
+<html lang="he">
+<head>
+    <meta charset="utf-8" />
+    <title>מוק</title>
+    <meta name="description" content="מוק" />
+    <meta name="keywords" content="מוק" />
+    <meta name="author" content="חלי בל, יובל זהר" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+    <!-- CSS -->
+    <link href="styles/reset.css" rel="stylesheet" />
+    <link href="styles/myStyle.css" rel="stylesheet" />
+    <link rel="icon" href="images/favicon.png">
+    <link rel="stylesheet" type="text/css" href="Fonts/OpenSans.css">
+    <link rel="stylesheet" type="text/css" href="styles/scrollup_pill.css">
+    <link rel="stylesheet" type="text/css" href="styles/animsition.css">
+
+    <!-- Scripts -->
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+    <script src="jScripts/animsition.js"></script>
+    <script src="jScripts/jquery.scrollUp.min.js"></script>
+    <script src="jScripts/JavaScript.js"></script>
+    <script src="jScripts/popUp.js"></script>
+
+</head>
+<body onload="popUp()">
+    <header>
+        <div id="blackTopNav">
+            <nav id="TopNav">
+                <ul>
+                    <li class="responsiveMenu"><a class="animsition-link" href="index.html" tab index="4"><div id="MenulLogo"><img src="images/moocLogoWhite.svg" /></div></a></li>
+                    <li class="responsiveMenu">
+                        <a href="#" style="padding-right: 2vw;">אסטרטגיות לימוד</a>
+                        <ul>
+                            <li><a href="aknaya.html" class="animsition-link">הקניית ידע</a></li>
+                            <li><a href="reflective.html" class="animsition-link">חשיבה רפלקטיבית</a></li>
+                            <li><a href="brainStorm.html" class="animsition-link">סיעור מוחות</a></li>
+                            <li><a href="conflict.html" class="animsition-link">פיתרון בעיות</a></li>
+                            <li><a href="caseStudy.html" class="animsition-link">חקר מקרה</a></li>
+                        </ul>
+                    </li>
+                    <li class="responsiveMenu">
+                        <a href="#" style="padding-right: 2vw;">דוגמאות תוכן</a>
+                        <ul>
+                            <li><a href="aknayaExm.html" class="animsition-link">הקניית ידע</a></li>
+                            <li><a href="reflectiveExm.html" class="animsition-link">חשיבה רפלקטיבית</a></li>
+                            <li><a href="brainStormExm.html" class="animsition-link">סיעור מוחות</a></li>
+                        </ul>
+                    </li>
+                    <li class="responsiveMenu">
+                        <button id="aboutButton" href="#aboutModal" class="modal-button">אודות</button>
+                    </li>
+                </ul>
+            </nav><div class="clear"></div>
+        </div>
+
+        <div id="yellowDiv">
+            <div class="animsition">
+                <!-- אנימציה -->
+                <div id="yellowHeader">
+                    <div id="yellowTitle">
+                        <h1>חקר מקרה</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div id="container">
+        <div id="whiteContainer" class="pagesWhiteContainer">
+
+            <!-- The Modal - about -->
+            <div id="aboutModal" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <span class="close">×</span>
+                        <h2>אודות</h2>
+                    </div>
+                    <div class="modal-body">
+                        <div id="aboutImage"><img src="images/moocLogo.svg" /></div>
+                        <div class="aboutText">אתר המשמש כלי עזר לפיתוח MOOC</div><br />
+                        <div class="aboutText">פרויקט גמר, תש"פ</div>
+                        <div id="hitLink"><a href="https://www.hit.ac.il/telem/overview" target="_blank">הפקולטה לטכנולוגיות למידה</a></div>
+                        <div class="creditBox">
+                            <div class="logoImg"><img src="images/hitLogo.jpg" /></div>
+                            <div class="creditText">
+                                <h4>צוות הפרויקט:</h4>
+                                חלי בל ויובל זהר
+                                <h4>מנחות:</h4>
+                                ד"ר חגית מישר-טל ורעות בכר
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="creditBox">
+                            <div class="logoImg"><img src="images/mofetLogo.jpg" /></div>
+                            <div class="creditText">
+                                בשיתוף עם מכון מופ"ת
+                                <br />
+                                נציגי הארגון: דורין עמר פסט, רותי סולומון<br />ואסף עמית
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <p>© כל הזכויות שמורות למכון הטכנולוגי חולון HIT</p>
+                    </div>
+                </div>
+            </div>
+            <!-- end of The Modal - about -->
+
+
+            <!-- אקורדיון -->
+
+            <button class="accordion">
+                <div class="accordionNum">1</div>
+                <div class="accordionTitle">הצבת מטרות</div>
+            </button>
+            <div class="panel">
+                <p>לפני שתבחר מקרה, חשוב להגדיר את היעדים שלך עבור השיעור. הצג את המטרות והיעדים של השיעור בפני המשתמשים.</p>
+            </div>
+
+            <button class="accordion">
+                <div class="accordionNum">2</div>
+                <div class="accordionTitle">בחירת חקר מקרה</div>
+            </button>
+            <div class="panel">
+                <ul>
+                    <li><p>גישת Angelo & Boehrer: "המקרים החזקים והמעניינים ביותר הם אלה המאפשרים מגוון הערכות לאותו מצב המוביל למסקנות סבירות ומשכנעות באותה מידה, ולכל אחת מהן השלכות שונות על הפעולה."</p></li>
+                    <li><p>"מקרים הם נרטיבים, מצבים, דוגמאות הנתונים שנבחרו, או הצהרות שאינן פתורות או בעיות פרובוקטיביות, מצבים או שאלות. המידע הכלול חייב להיות עשיר מספיק כדי ליצור מצב אמין, אבל לא מצב שמשלים וסוגר דיון או חקירה. החקר מקרהים יכולים להיות קצרים עבור דיונים בשיעור קצר או ארוך, ואף להתפרס על מספר שיעורים ברמת מורכבות גבוהה."</p></li>
+                    <li><p>גישת אוניברסיטת קלגרי: "בחקר מקרה טוב, מתמקדים בבעיה אחת ויש לנו הצהרת בעיה ברורה. בחר חקר מקרה שתואם את מטרות הקורס שלך, המאפשר לתלמידים ליישם את מה שהם לומדים לכל לתרחיש</p></li>
+                </ul>
+            </div>
+
+            <button class="accordion">
+                <div class="accordionNum">3</div>
+                <div class="accordionTitle">הכנה עצמית מוקדמת</div>
+            </button>
+            <div class="panel">
+                <ul>
+                    <li><p>הכר את הסוגיות שעלולות לעלות, והכוון את החניכים לפתירתן</p></li>
+                    <li><p>חלק את התכנים המורכבים ליחידות לימוד קטנות יותר</p></li>
+                </ul>
+            </div>
+
+            <button class="accordion">
+                <div class="accordionNum">4</div>
+                <div class="accordionTitle">הכנת קבוצת הלמידה</div>
+            </button>
+            <div class="panel">
+                <p>הצג את התנאים הבאים אל מול החניכים, והימנע מתסכול שנגרם מאי ודאות:</p>
+                <ol>
+                    <li><p>התחל עם מקרה פשוט הראשון</p></li>
+                    <li><p>דון במטרה והצע שיטות לביצוע הערכת חקר המקרה</p></li>
+                    <li><p>אם התיקים נעשים בצוות, הכניסו תלמידים לדינמיקה של צוות</p></li>
+                    <li><p>קבע כללי התנהגות ונימוסים</p></li>
+                    <li><p>קח מספיק זמן כדי להציג את הנרטיב ולבסס את העובדות בחקר מקרה</p></li>
+                    <li><p>להרגיע את התלמידים כי נוצר בלגן נורמלי עבור משימה מסוג זה</p></li>
+                    <li><p>הקפד לתת לתלמידים הזדמנות לספק את התגובות ואת המשוב</p></li>
+                </ol>
+            </div>
+
+            <button class="accordion">
+                <div class="accordionNum">5</div>
+                <div class="accordionTitle">העלאת דיון</div>
+            </button>
+            <div class="panel">
+                <ol>
+                    <li><p>החניכים חוקרים בעיה על ידי מיון העובדות הרלוונטיות, פיתוח מסקנות לוגיות, והצגתם בפני התלמידים האחרים והמורה - התלמידים דנים בבעיה של מישהו אחר.</p></li>
+                    <li><p>ניתן להקצות לתלמידים תפקידים בחקר מקרה, ולקחת את נקודות המבט המחייבות אותם להתווכח על פעולות ספציפיות של אופי, בהתחשב באינטרסים ובידע שלהם.</p></li>
+                    <li><p>החניכים ייקחו את היוזמה כדי להיות מעורבים באופן מלא, כך נושאים הם כבר לא רעיונות מופשטים, אוהם הופכים לאמיתיים וכך החניכים מעריכים את חקר המקרה כמקרה אמיתי".</p></li>
+                </ol>
+            </div>
+
+            <button class="accordion">
+                <div class="accordionNum">6</div>
+                <div class="accordionTitle">הנחיית הדיון</div>
+            </button>
+            <div class="panel">
+                <ol>
+                    <li><p>תן לחניכים מספיק זמן לקרוא ולחשוב על המקרה. אם המקרה הוא ארוך, עדיף להקצות אותו כשיעורי בית עם סט של שאלות לחניכים.</p></li>
+                    <li><p>הצג את המקרה בקצרה וספק כמה הנחיות כיצד לגשת אליו. כדאי להבהיר איך אתם רוצים שהחניכים יחשבו על המקרה. ניתן לשבור את השלבים שאתה רוצה בכדי לנתח את המקרה, אם אתה מעוניין שהתלמידים יתעלמו או יתמקדו בפרטיות מידע, כדאי לציין את זה גם כן.</p></li>
+                    <li><p>יצירת קבוצות מפוקחות ולוודא שכולם מעורבים / ביצוע הערכת עמיתים.</p></li>
+                    <li><p>יש קבוצות להציג את הפתרונות / חשיבה.</p></li>
+                    <li><p>שאל שאלות להבהרה ולהעביר את הדיון לרמה אחרת.</p></li>
+                    <li><p>לנתח נושאים שהועלו.</p></li>
+                </ol>
+            </div>
+
+            <button class="accordion">
+                <div class="accordionNum">7</div>
+                <div class="accordionTitle">שאילת שאלות</div>
+            </button>
+            <div class="panel">
+                <ul>
+                    <li><p>השאלה הראשונה תקבע את טון הדיון. האם אתה מעוניין בדיון פתוח, או בדיון שסובב סביב נושא מאוד אינהרנטי?</p></li>
+                    <li><p>גלה סובלנות כלפי תשובות שנויות במחלוקת</p></li>
+                    <li><p>הכוון חניכים שתשובותיהם סטו מהמסלול אליו כיוונת</p></li>
+                </ul>
+            </div>
+
+            <button class="accordion">
+                <div class="accordionNum">8</div>
+                <div class="accordionTitle">פעילויות</div>
+            </button>
+            <div class="panel">
+                <p>שפר את חקר המקרה באמצעות יצירת משחוק אינטראקטיבי שיוביל את החניכים ליצירת חווית למידה משמעותית.</p>
+            </div>
+
+            <button class="accordion">
+                <div class="accordionNum">9</div>
+                <div class="accordionTitle">הערכה</div>
+            </button>
+            <div class="panel">
+                <p>בסוף הקורס הערך את הפרמטרים שבאמצעותם אמדת את הקורס מלכתחילה, וראה כיצד ניתן לשפר את הקורס לסבב הבא.</p>
+            </div>
+
+            <a id="linkOriginalText" href="https://www.ryerson.ca/content/dam/lt/resources/handouts/CaseMethodBestPractices.pdf" target="_blank">
+                <div id="linkOriginal">
+                    קישור למאמר המקורי
+                </div>
+            </a>
+
+            <!-- סוף אקורדיון -->
+        </div>
+    </div>
+
+    <footer>
+        <div id="blackFooter">
+            <p>תוצר זה פותח במסגרת פרויקט גמר לתואר ראשון ב<a href="https://www.hit.ac.il/telem/overview" target="_blank">פקולטה לטכנולוגיות למידה</a>, HIT</p>
+        </div>
+    </footer>
+
+    <!--  סקריפט לאקורדיון  -->
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight){
+              panel.style.maxHeight = null;
+            } else {
+              panel.style.maxHeight = panel.scrollHeight + "px";
+            }
+          });
+        }
+    </script>
+
+    <!-- סקריפט לאנימציה -->
+    <script>
+$(document).ready(function() {
+  $(".animsition").animsition({
+    inClass: 'zoom-in-sm',
+    outClass: 'zoom-out-sm',
+    inDuration: 3500,
+    outDuration: 1000,
+    linkElement: '.animsition-link',
+    // e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
+    loading: true,
+    loadingParentElement: 'body', //animsition wrapper element
+    loadingClass: 'animsition-loading',
+    loadingInner: '', // e.g '<img src="loading.svg" />'
+    timeout: false,
+    timeoutCountdown: 5000,
+    onLoadEvent: true,
+    browser: [ 'animation-duration', '-webkit-animation-duration'],
+    // "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
+    // The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
+    overlay : false,
+    overlayClass : 'animsition-overlay-slide',
+    overlayParentElement : 'body',
+    transition: function(url){ window.location.href = url; }
+  });
+});
+    </script>
+
+
+    <!-- סקריפט לחזרה למעלה -->
+    <script>
+$(function () {
+  $.scrollUp({
+    scrollName: 'scrollUp', // Element ID
+    topDistance: '300', // Distance from top before showing element (px)
+    topSpeed: 300, // Speed back to top (ms)
+    animation: 'slide', // Fade, slide, none
+    animationInSpeed: 200, // Animation in speed (ms)
+    animationOutSpeed: 200, // Animation out speed (ms)
+    scrollText: 'חזור למעלה', // Text for element
+    activeOverlay: false, // Set CSS color to display scrollUp active point, e.g '#00FFFF'
+  });
+});
+    </script>
+
+</body>
+</html>

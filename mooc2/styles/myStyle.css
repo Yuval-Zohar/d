@@ -1,0 +1,1141 @@
+.clear {
+    clear: both;
+}
+
+body {
+    direction: rtl;
+    font-family: 'OpenSans', sans-serif;
+}
+
+#container {
+    width: 92vw;
+    margin-right: auto;
+    margin-left: auto;
+    height: auto;    
+}
+
+/*<!---------- תפריט ניווט שחור ----------->*/
+
+#blackTopNav {
+    background-color: black;
+    width: 100%;
+    height: 4.6vw;
+    position: fixed;
+}
+
+#MenulLogo {
+    margin-right: 0.4vw;
+    margin-left: 2vw;
+    width: 5.9vw;
+}
+
+nav#TopNav ul {
+    list-style: none;
+    width: 38%;
+    margin: 0 auto;
+    font-size: 1.1vw;
+    padding-right: 2vw;
+}
+
+.responsiveMenu {
+    display: inline-block;
+    float: right;
+}
+
+button#aboutButton {
+    border: none;
+    font-size: 1.1vw;
+    font-family: 'OpenSans', sans-serif;
+    background-color: black;
+    color: white;
+    padding-right: 2.6vw;
+    Padding-top: 1.6vw;
+    cursor: pointer;
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -ms-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+}
+
+nav#TopNav ul li a {
+    line-height: 2vw;
+    display: block;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    width: 7.6vw;
+    height: 2vw;
+    Padding-top: 1.3vw;
+    padding-bottom: 0.3vw;
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -ms-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+}
+
+nav#TopNav ul li a:hover, button#aboutButton:hover {
+    color: #ffd018;
+    text-decoration: underline;
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -ms-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+
+}
+
+nav#TopNav ul li ul {
+    display: none;
+    position: absolute;
+    width: 20vw;
+}
+
+nav#TopNav ul li ul a {
+    text-align: right;
+    font-size: 0.88vw;
+    padding-right: 1vw;
+    border-bottom: 0.05vw solid #ffd018;
+    padding-bottom: 1vw;
+}
+
+nav#TopNav ul li:hover > ul, nav#TopNav ul li:focus > ul {
+    display: block;
+    width: 10vw;
+}
+
+#pageSelectTopNav {
+    color: #ffd018;
+}
+
+/*<!---------- סוף תפריט ניווט שחור ----------->*/
+
+
+/*<!---------- header צהוב ----------->*/
+
+#yellowDiv {
+    background-image: url(../images/headerPic.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding-top: 5vw;
+}
+
+#yellowHeader {
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#bigLogo{
+    padding-top: 8vw;
+    padding-bottom: 8vw;
+    width: 35%;
+    margin: auto;
+}
+
+#yellowTitle {
+    padding-top: 8vw;
+    padding-bottom: 8vw;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+#yellowTitle h1 {
+    font-size: 5.5vw;
+}
+
+#quickMove, #quickMove2 {
+    font-size: 1.4vw;
+    margin-top: 0.5vw;
+}
+
+#quickMove a, #quickMove2 a {
+    text-decoration: none;
+    color: black;
+}
+
+#quickMove a {
+    font-weight: bold;
+}
+
+#quickMove2 a {
+    font-weight: normal;
+}
+
+#quickMove a:hover, #quickMove2 a:hover {
+    background-color: black;
+    color: #ffd018;
+}
+
+/*<!---------- סוף header צהוב----------->*/
+
+/*<!---------- קונטיינר לבן----------->*/
+
+#whiteContainer {
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 4vw;
+    padding-bottom: 4vw;
+    background-color: white;
+    height: auto;
+}
+
+.mainWhiteContainer {
+    width: 60%;
+}
+
+.pagesWhiteContainer {
+    width: 100%;
+}
+
+#whiteContainer h2 {
+    color: black;
+    text-align: center;
+    font-size: 2.9vw;
+}
+
+#whiteContainer p {
+    color: black;
+    font-size: 1.4vw;
+    line-height: 2.9vw;
+}
+
+#example, #linkOriginal {
+    width: 100%;
+    height: 3.5vw;
+    text-align: center;
+    font-size: 2vw;
+    margin-top: 4vw;
+    padding-top: 3vw;
+    padding-bottom: 1.5vw;
+    letter-spacing: 0.6vw;
+    -webkit-transition: all 400ms ease-in-out;
+    -moz-transition: all 400ms ease-in-out;
+    -ms-transition: all 400ms ease-in-out;
+    -o-transition: all 400ms ease-in-out;
+    transition: all 400ms ease-in-out;
+}
+
+#example {
+    background-color: #ffd018;
+    color: black;
+}
+
+#linkOriginal {
+    color: #ffd018;
+    background-color: black;
+}
+
+#example:hover, #linkOriginal:hover {
+    -webkit-transition: all 400ms ease-in-out;
+    -moz-transition: all 400ms ease-in-out;
+    -ms-transition: all 400ms ease-in-out;
+    -o-transition: all 400ms ease-in-out;
+    transition: all 400ms ease-in-out;
+}
+
+#linkOriginal:hover {
+    background-color: #ffd018;
+    color: black;
+}
+
+#example:hover {
+    color: #ffd018;
+    background-color: black;
+}
+
+#exampleText, #linkOriginalText {
+    text-decoration: none;
+}
+
+.grey1, .grey2, .darkGrey1, .grey3, .grey4, .darkGrey2, .yellow1, .yellow2 {
+    padding-top: 1.8vw;
+    padding-bottom: 1.8vw;
+    font-size: 1.6vw;
+}
+
+.grey1 {
+    background-color: #e6e6e6;
+    width: 100%;
+    text-align: center;
+    color: black;
+    margin-bottom: 4vw;
+}
+
+.grey2 {
+    background-color: #e6e6e6;
+    width: 75%;
+    height: 7.5vw;
+    text-align: right;
+    color: black;
+    float: right;
+    line-height: 2.5vw;
+    padding-right: 3vw;
+    margin-bottom: 2vw;
+}
+
+.grey3 {
+    background-color: #e6e6e6;
+    width: 16%;
+    height: 7.5vw;
+    text-align: right;
+    color: black;
+    float: left;
+    line-height: 2.5vw;
+    padding-right: 3vw;
+    margin-bottom: 2vw;
+}
+
+.grey4 {
+    background-color: #e6e6e6;
+    width: 94%;
+    text-align: right;
+    color: black;
+    margin-bottom: 2vw;
+    padding-right: 3%;
+    padding-left: 3%;
+    line-height: 2.5vw;
+}
+
+.darkGrey1 {
+    background-color: #666666;
+    width: 100%;
+    text-align: center;
+    color: white;
+    margin-bottom: 2vw;
+}
+
+
+.darkGrey2 {
+    background-color: #666666;
+    width: 94%;
+    text-align: right;
+    color: white;
+    margin-bottom: 2vw;
+    line-height: 2.5vw;
+    padding-right: 3%;
+    padding-left: 3%;
+}
+
+.yellow1 {
+    background-color: #ffd018;
+    width: 94%;
+    text-align: right;
+    margin-bottom: 2vw;
+    line-height: 2.5vw;
+    padding-right: 3%;
+    padding-left: 3%;
+}
+
+.yellow1 li {
+    margin-right: 2.5vw;
+}
+
+.yellow2 {
+    background-color: #ffd018;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 2vw;
+}
+
+#floatDarkGrey1 {
+    float: right;
+    width: 40%;
+}
+
+#floatDarkGrey2 {
+    float: left;
+    width: 40%;
+}
+
+#arrowDarkGrey {
+    float: right;
+    background-image: url(../images/element-21.svg);
+    background-repeat: no-repeat;
+    width: 10.1%;
+    height: 20vw;
+    margin-top: -2vw;
+    margin-bottom: -7vw;
+    margin-right: 4.5vw;
+}
+
+#brainStormImg {
+    background-image: url(../images/element-22.svg);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 55.6vw;
+    margin-bottom: 5vw;
+}
+
+.brainStormText {
+    width: 20.4vw;
+    height: 3.6vw;
+    text-align: center;
+    padding: 2.3vw;
+    font-size: 1.6vw;
+    line-height: 2vw;
+}
+
+#brainStormText1 {
+    margin-top: 2vw;
+    margin-right: 16.6vw;
+    float: right;
+}
+
+#brainStormText2 {
+    margin-top: 2vw;
+    margin-left: 15.1vw;
+    float: left;
+}
+
+#brainStormText6 {
+    margin-top: 14.3vw;
+    margin-right: 1vw;
+    float: right;
+}
+
+#brainStormTitle {
+    width: 7vw;
+    height: 6vw;
+    text-align: center;
+    font-size: 3vw;
+    line-height: 3vw;
+    float: right;
+    margin-top: 16vw;
+    margin-right: 16.8vw;
+
+}
+
+#brainStormText3 {
+    margin-top: 14.3vw;
+    float: left;
+}
+
+#brainStormText5 {
+    margin-top: 14.6vw;
+    margin-right: 16.6vw;
+    float: right;
+}
+
+#brainStormText4 {
+    margin-top: 14.6vw;
+    margin-left: 15.1vw;
+    float: left;
+}
+
+#wordCloudDiv {
+    width: 100%;
+    height: 51.5vw;
+    background-color: #ffd018;
+    padding-top: 4vw;
+}
+
+#wordCloudsSvg {
+    margin-top: -66vw;
+    width: 88%;
+    height: 31vw;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    padding-top: 3vw;
+    padding-bottom: 3vw;
+}
+
+#wordCloudDiv h3 {
+    font-size: 4vw;
+    text-align: center;
+    font-weight: normal;
+}
+
+.cloudText {
+    font-size: 1.6vw;
+    text-align: center;
+    margin-top: 1vw;
+}
+
+#wordCloudDiv form {
+    width: 80%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2.5vw;
+
+}
+
+#wordCloudDiv textarea {
+    width: 96%;
+    height: 27.3vw;
+    display: block;
+    font-size: 1.6vw;
+    font-family: 'OpenSans', sans-serif;
+    padding: 2%;
+}
+
+#wordCloudDiv #btnGetWords {
+    color: white;
+    font-family: 'OpenSans', sans-serif;
+    background-color: black;
+    border: none;
+    border-radius: 50vw;
+    width: 11vw;
+    height: 4vw;
+    cursor: pointer;
+    font-size: 1.6vw;
+    -webkit-transition: all 200ms ease-in-out;
+    -moz-transition: all 200ms ease-in-out;
+    -ms-transition: all 200ms ease-in-out;
+    -o-transition: all 200ms ease-in-out;
+    transition: all 200ms ease-in-out;
+
+}
+
+#wordCloudDiv #btnGetWords:hover {
+    color: black;
+    background-color: white;
+    -webkit-transition: all 200ms ease-in-out;
+    -moz-transition: all 200ms ease-in-out;
+    -ms-transition: all 200ms ease-in-out;
+    -o-transition: all 200ms ease-in-out;
+    transition: all 200ms ease-in-out;
+}
+
+
+#btnCenter {
+    margin-left: auto;
+    margin-right: auto;
+    width: 11vw;
+    height: 4vw;
+    margin-top: 2.5vw;
+}
+
+.icon {
+    width: 15vw;
+    height: 15vw;
+    background-repeat: no-repeat;
+    float: right;
+}
+
+.icon:nth-child(1), .icon:nth-child(2) {
+    margin-left: 12.5vw;
+}
+
+#iconContainer {
+    width: 70vw;
+    height: 18.2vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 4vw;
+}
+
+#iconContainer2 {
+    width: 50vw;
+    height: 20vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 4vw;
+    line-height: 2vw;
+}
+
+#icon1 {
+    background-image: url(../images/element-17.svg);
+}
+
+#icon2 {
+    background-image: url(../images/element-16.svg);
+}
+
+#icon3 {
+    background-image: url(../images/element-15.svg);
+}
+
+#icon4 {
+    background-image: url(../images/element-14.svg);
+}
+
+#icon5 {
+    background-image: url(../images/element-13.svg);
+    float: left;
+    margin-left: 0vw;
+}
+
+.iconText {
+    margin-top: 16vw;
+    text-align: center;
+    font-size: 1.6vw;
+}
+
+#reflectiveImg {
+    background-image: url(../images/element-19.svg);
+    width: 100%;
+    height: 45vw;
+    background-repeat: no-repeat;
+}
+
+#reflectiveImg button {
+    border-radius: 50%;
+    border: none;
+    background-color: white;
+    width: 8.4vw;
+    height: 8.4vw;
+    text-align: center;
+    font-size: 1.4vw;
+    -webkit-transition: all 200ms ease-in-out;
+    -moz-transition: all 200ms ease-in-out;
+    -ms-transition: all 200ms ease-in-out;
+    -o-transition: all 200ms ease-in-out;
+    transition: all 200ms ease-in-out;
+    font-family: 'OpenSans', sans-serif;
+    cursor: pointer;
+}
+
+#reflectiveImg button:hover {
+    background-color: black;
+    color: #ffd018;
+    -webkit-transition: all 200ms ease-in-out;
+    -moz-transition: all 200ms ease-in-out;
+    -ms-transition: all 200ms ease-in-out;
+    -o-transition: all 200ms ease-in-out;
+    transition: all 200ms ease-in-out;
+
+}
+
+#absolutText1 {
+    margin-top: 3vw;
+    margin-right: 29.9vw;
+}
+
+#absolutText2 {
+    margin-top: 6.3vw;
+    margin-right: 23.3vw;
+}
+
+#absolutText3 {
+    margin-top: 3.2vw;
+    margin-right: 27.8vw;
+}
+
+#absolutText4 {
+    margin-top: -23.8vw;
+    margin-right: 59.3vw;
+}
+
+#absolutText5 {
+    margin-top: 5.3vw;
+    margin-right: 56.4vw;
+}
+
+.yellowDivRight {
+    float: right;
+    margin-left: 12vw;
+}
+
+.yellowDivRight2 {
+    float: right;
+    margin-left: 5.3vw;
+}
+
+.yellowDivLeft, .yellowDivLeft2 {
+    float: left;
+}
+
+.yellowDivRight, .yellowDivLeft, .yellowDivRight2, .yellowDivLeft2 {
+    width: 13vw;
+    margin-bottom: 6vw;
+}
+
+.yellowDivRight, .yellowDivLeft {
+    height: 22.8vw;
+}
+
+.yellowDivRight2, .yellowDivLeft2 {
+    height: 18.5vw;
+}
+
+.yellowSquare {
+    height: 10.5vw;
+    background-color: #ffd018;
+    padding-top: 2.5vw;
+    padding-right: 4vw;
+    font-size: 9vw;
+}
+
+.yellowSquareText, .yellowSquareText2 {
+    margin-top: 1vw;
+}
+
+.yellowSquareText {
+    text-align: right;
+    line-height: 2vw;
+    font-size: 1.2vw;
+}
+
+.yellowSquareText2 {
+    text-align: center;
+    line-height: 2.3vw;
+    font-size: 1.6vw;
+}
+
+.greyArrow, .greyArrow2{
+    background-image: url(../images/element-23.svg);
+    width: 2.5vw;
+    height: 5vw;
+    background-repeat: no-repeat;
+    float: right;
+    margin-top: 4vw;
+}
+
+.greyArrow {
+    margin-left: 12vw;
+}
+
+.greyArrow2 {
+    margin-left: 5.3vw;
+}
+
+#survey {
+    width: 100%;
+    height: 660px;
+}
+
+#surveyDiv {
+    font-family: 'OpenSans', sans-serif;
+}
+
+#conflictImg {
+    background-image: url(../images/element-24.svg);
+    background-repeat: no-repeat;
+    width: 80%;
+    height: 23.8vw;
+    margin-bottom: 5vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#conflictImgText1 {
+    font-size: 2vw;
+    margin-right: 23vw;
+    text-align: right;
+    margin-top: -1.6vw;
+    display: block;
+}
+
+#conflictImgText2, #conflictImgText3 {
+    color: white;
+    font-size: 2vw;
+    text-align: right;
+    float: right;
+}
+#conflictImgBox {
+    float: right;
+    width: 24.5vw;
+    height: 15vw;
+    /*background-color: rgba(255, 0, 0, 0.4);*/
+    margin-top: 3.15vw;
+}
+
+.conflictImgTextBox {
+    margin-bottom: 2.2vw;
+    color: black;
+    font-size: 2vw;
+    text-align: left;
+    /*background-color: rgba(0, 255, 0, 0.3);*/
+    /*width: 35vw;*/
+}
+
+#conflictImgText2 {
+    margin-right: 5.8vw;
+    margin-top: 9.5vw;
+}
+
+#conflictImgText3 {
+    margin-right: 21.2vw;
+    margin-top: 9.5vw;
+}
+
+#conflictImg2 {
+    background-image: url(../images/element-25.svg);
+    background-repeat: no-repeat;
+    width: 49%;
+    height: 45vw;
+    margin-bottom: 5vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#conflictImgText4 {
+    font-size: 2vw;
+    margin-right: 7vw;
+    text-align: center;
+    margin-top: 7vw;
+    display: block;
+    width: 12vw;
+}
+
+#conflictImgText5 {
+    font-size: 2.5vw;
+    margin-right: 18.5vw;
+    text-align: center;
+    margin-top: 7.5vw;
+    float: right;
+    width: 9vw;
+}
+
+#conflictImgText6 {
+    font-size: 2vw;
+    margin-right: 33.5vw;
+    text-align: center;
+    margin-top: 9vw;
+    width: 10vw;
+}
+
+#conflictImgText7 {
+    font-size: 2vw;
+    margin-right: 11vw;
+    text-align: center;
+    margin-top: 8vw;
+    display: block;
+    color: white;
+    width: 12vw;
+}
+
+#dragAndDropContainer {
+    padding-top: 1.8vw;
+    padding-bottom: 2.3vw;
+    font-size: 1.6vw;
+    background-color: #e6e6e6;
+    width: 94%;
+    text-align: right;
+    color: black;
+    margin-bottom: 4vw;
+    padding-right: 3%;
+    padding-left: 3%;
+    line-height: 2.5vw;
+}
+
+#dragAndDropContainer h3 {
+    font-weight: normal;
+    font-size: 2.5vw;
+    margin-top: 0.5vw;
+}
+
+.dragAndDropText {
+    margin-top: 2vw;
+    float: right;
+    margin-left: 1vw;
+}
+
+/* dropDown */
+select {
+    width: 19vw;
+    height: 2.3vw;
+    font-size: 1.4vw;
+    float: right;
+    margin-left: 20px;
+    margin-top: 2.1vw;
+    font-family: 'OpenSans', sans-serif;
+}
+
+#firstP, #firstP2 {
+    margin-top: 1.9vw;
+    color: green;
+    float: right;
+}
+
+#secondP, #secondP2 {
+    margin-top: 1.9vw;
+    color: red;
+    float: right;
+}
+
+
+
+/* סוף dropDown */
+
+/*<!---------- סוף קונטיינר לבן----------->*/
+
+/* דוגמאות */
+
+.exampleImg {
+    margin-bottom: 2vw;
+    width: 91.8vw;
+    height: 40.4vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: solid 0.05vw black;
+    background-size: contain;
+}
+
+#exampleImg1 {
+    background-image: url(../images/brainStorm1.jpg);
+}
+
+#exampleImg2 {
+    background-image: url(../images/brainStorm2.jpg);
+}
+
+#exampleImg3 {
+    background-image: url(../images/aknaya1.jpg);
+}
+
+#exampleImg4 {
+    background-image: url(../images/aknaya2.jpg);
+}
+
+#exampleImg5 {
+    background-image: url(../images/aknaya3.jpg);
+}
+
+/* סוף דוגמאות*/
+
+/*<!---------- footer ----------->*/
+
+
+#blackFooter {
+    background-color: black;
+    height: auto;
+    border-top: solid 0.3vw #ffd018;
+    padding-top: 2.5vw;
+    padding-bottom: 2.5vw;
+    font-size: 1.4vw;
+
+}
+
+#blackFooter p {
+    font-size: 1.3vw;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+#blackFooter p a {
+    text-decoration: none;
+    color: #ffd018;
+}
+
+#blackFooter p a:hover {
+    text-decoration: underline;
+}
+
+
+/*<!---------- footer----------->*/
+
+
+/*-------------- אקורדיון ---------------*/
+
+.accordion {
+  font-family: 'OpenSans', sans-serif;
+  background-color: #e6e6e6;
+  color: black;
+  cursor: pointer;
+  /*padding: 35px;*/
+  padding-right: 35px;
+  padding-left: 35px;
+  padding-bottom: 35px;
+  padding-top: 35px;
+  width: 100%;
+  border: none;
+  text-align: right;
+  outline: none;
+  font-size: 32px;
+  transition: 0.4s;
+  border-bottom: #666666 solid 1px;
+}
+
+.accordionNum {
+    width: 70px;
+    height: 50px;
+    background-color: #ffd018;
+    float: right;
+    margin-left: 20px;
+    text-align: center;
+    padding-top: 20px;
+    font-weight: bolder;
+}
+
+.accordionTitle {
+    padding-top: 20px;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.accordion:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: left;
+  margin-left: 5px;
+  margin-top: -37px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.panel p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.panel ol, .panel ul {
+    margin-right: 18px;
+}
+
+/* ------------סוף אקורדיון-------------- */
+
+
+
+/*-------------------פופ אפ----------------*/
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 7vw; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.6); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: white;
+  margin: auto;
+  padding: 0;
+  width: 60%; /*רוחב הפופאפ*/
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+  color: black;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  margin-top:-0.7vw;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 20px 16px;
+  background-color: #ffd018;
+  color: white;
+}
+
+.modal-body
+{
+    padding: 1vw 2vw;
+}
+
+.modal-footer {
+  /*padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;*/
+  padding-top: 0.5vw;
+  padding-bottom: 0.5vw;
+  background-color: #ffd018;
+  color: white;
+  text-align: center;
+  font-size: 1.3vw;
+
+}
+
+/*-------------סוף פופ אפ---------------*/
+
+/* חלון אודות */
+
+#aboutImage {
+    width: 17%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+}
+
+.aboutText, #hitLink a  {
+    font-size: 1.2vw;
+    text-align: center;
+    margin-bottom: 0.3vw;
+}
+
+#hitLink{
+    text-align: center;
+}
+
+#hitLink a{
+color: cornflowerblue;
+}
+
+#hitLink a:hover {
+    text-decoration: none;
+}
+
+.creditBox {
+    width: 45.5%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1.2vw;
+    font-size: 1vw;
+    margin-bottom: 0.5vw;
+}
+
+.creditBox h4 {
+    font-weight: bold;
+    font-size: 1.1vw;
+    margin-top: 0.8vw;
+}
+
+.logoImg {
+    float: right;
+}
+
+.logoImg img {
+    width: 7.8vw;
+}
+
+.creditText {
+    float: right;
+    margin-right: 1vw;
+}
+
+/* סוף חלון אודות */

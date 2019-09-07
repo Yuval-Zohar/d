@@ -1,0 +1,311 @@
+﻿<!doctype html>
+<html lang="he">
+<head>
+    <meta charset="utf-8" />
+    <title>מוק</title>
+    <meta name="description" content="מוק" />
+    <meta name="keywords" content="מוק" />
+    <meta name="author" content="חלי בל, יובל זהר" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+    <!-- CSS -->
+    <link href="styles/reset.css" rel="stylesheet" />
+    <link href="styles/myStyle.css" rel="stylesheet" />
+    <link rel="icon" href="images/favicon.png">
+    <link rel="stylesheet" type="text/css" href="Fonts/OpenSans.css">
+    <link rel="stylesheet" type="text/css" href="styles/scrollup_pill.css">
+    <link rel="stylesheet" type="text/css" href="styles/animsition.css">
+
+    <!-- Scripts -->
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+    <script src="jScripts/animsition.js"></script>
+    <script src="jScripts/jquery.scrollUp.min.js"></script>
+    <script src="jScripts/JavaScript.js"></script>
+    <script src="jScripts/popUp.js"></script>
+
+</head>
+<body onload="popUp()">
+    <header>
+        <div id="blackTopNav">
+            <nav id="TopNav">
+                <ul>
+                    <li class="responsiveMenu"><a class="animsition-link" href="index.html" tab index="4"><div id="MenulLogo"><img src="images/moocLogoWhite.svg" /></div></a></li>
+                    <li class="responsiveMenu">
+                        <a href="#" style="padding-right: 2vw;">אסטרטגיות לימוד</a>
+                        <ul>
+                            <li><a href="aknaya.html" class="animsition-link">הקניית ידע</a></li>
+                            <li><a href="reflective.html" class="animsition-link">חשיבה רפלקטיבית</a></li>
+                            <li><a href="brainStorm.html" class="animsition-link">סיעור מוחות</a></li>
+                            <li><a href="conflict.html" class="animsition-link">פיתרון בעיות</a></li>
+                            <li><a href="caseStudy.html" class="animsition-link">חקר מקרה</a></li>
+                        </ul>
+                    </li>
+                    <li class="responsiveMenu">
+                        <a href="#" style="padding-right: 2vw;">דוגמאות תוכן</a>
+                        <ul>
+                            <li><a href="aknayaExm.html" class="animsition-link">הקניית ידע</a></li>
+                            <li><a href="reflectiveExm.html" class="animsition-link">חשיבה רפלקטיבית</a></li>
+                            <li><a href="brainStormExm.html" class="animsition-link">סיעור מוחות</a></li>
+                        </ul>
+                    </li>
+                    <li class="responsiveMenu">
+                        <button id="aboutButton" href="#aboutModal" class="modal-button">אודות</button>
+                    </li>
+                </ul>
+            </nav><div class="clear"></div>
+        </div>
+
+        <div id="yellowDiv">
+            <div class="animsition">
+                <!-- אנימציה -->
+                <div id="yellowHeader">
+                    <div id="yellowTitle">
+                        <h1>חשיבה רפלקטיבית</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div id="container">
+        <div id="whiteContainer" class="pagesWhiteContainer">
+
+            <!-- The Modal - about -->
+            <div id="aboutModal" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <span class="close">×</span>
+                        <h2>אודות</h2>
+                    </div>
+                    <div class="modal-body">
+                        <div id="aboutImage"><img src="images/moocLogo.svg" /></div>
+                        <div class="aboutText">אתר המשמש כלי עזר לפיתוח MOOC</div><br />
+                        <div class="aboutText">פרויקט גמר, תש"פ</div>
+                        <div id="hitLink"><a href="https://www.hit.ac.il/telem/overview" target="_blank">הפקולטה לטכנולוגיות למידה</a></div>
+                        <div class="creditBox">
+                            <div class="logoImg"><img src="images/hitLogo.jpg" /></div>
+                            <div class="creditText">
+                                <h4>צוות הפרויקט:</h4>
+                                חלי בל ויובל זהר
+                                <h4>מנחות:</h4>
+                                ד"ר חגית מישר-טל ורעות בכר
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="creditBox">
+                            <div class="logoImg"><img src="images/mofetLogo.jpg" /></div>
+                            <div class="creditText">
+                                בשיתוף עם מכון מופ"ת
+                                <br />
+                                נציגי הארגון: דורין עמר פסט, רותי סולומון<br />ואסף עמית 
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <p>© כל הזכויות שמורות למכון הטכנולוגי חולון HIT</p>
+                    </div>
+                </div>
+            </div>
+            <!-- end of The Modal - about -->
+
+
+            <div class="grey1">
+                הכתיבה הרפלקטיבית משפרת את כישורי ההכוונה העצמית.
+            </div>
+
+            <div id="iconContainer">
+                <div class="icon" id="icon1"><div class="iconText">ידע קוגנטיבי</div></div>
+                <div class="icon" id="icon2"><div class="iconText">ידע מטה - קוגנטיבי</div></div>
+                <div class="icon" id="icon3"><div class="iconText">מוטיבציה</div></div>
+            </div>
+            <div class="clear"></div>
+
+            <div class="darkGrey1">
+                זו הערכה מאתגרת, ממוקדת וביקורתית של התנהגות האדם כאמצעי לפיתוח עצמי.
+            </div>
+            <div class="grey2">
+                הגדרה זו מתייחסת לאופן בו התהליך הרפלקטיבי מאפשר לאדם להעריך את פעולותיו באופן מבוקר באמצעות שאלות כגון:
+            </div>
+            <div class="grey3">
+                מה אני עושה?<br />
+                מדוע?<br />
+                כיצד זה משפיע?
+            </div>
+            <div class="clear"></div>
+            <div class="darkGrey1">
+                הביקורת מאפשרת לפתח פרספקטיבות חדשות, ודרכים חדשות להתבוננות על המעשים.
+            </div>
+            <div id="reflectiveImg">
+                .
+                <div class="absolutText" id="absolutText1"><button class="modal-button" href="#myModal1">ידע קוגנטיבי</button></div>
+                <div class="absolutText" id="absolutText2"><button class="modal-button" href="#myModal2">ידע מטה - קוגנטיבי</button></div>
+                <div class="absolutText" id="absolutText3"><button class="modal-button" href="#myModal3">מוטיבציה</button></div>
+                <div class="absolutText" id="absolutText4"><button class="modal-button" href="#myModal4">תהליך</button></div>
+                <div class="absolutText" id="absolutText5"><button class="modal-button" href="#myModal5">חשיבה ביקורתית</button></div>
+            </div>
+
+            <!-- The Modal -->
+            <div id="myModal1" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <span class="close">×</span>
+                        <h2>ידע קוגנטיבי</h2>
+                    </div>
+                    <div class="modal-body">
+                        <p>(קוֹגְנִיצְיָה) מתארת את תופעת הידיעה האנושית. המונח הכרה מתייחס לידע או מידע המצוי במוחו של אדם. הוא כולל גם את תהליכי רכישת ידע, עיבודו ויישומו. כמו כן, הוא מתאר את המרכזים במוח האדם, בהם מתרחשים תהליכי התהוותה של הידיעה האנושית. (ויקיפדיה)</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- The Modal -->
+            <div id="myModal2" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <span class="close">×</span>
+                        <h2>ידע מטה - קוגנטיבי</h2>
+                    </div>
+                    <div class="modal-body">
+                        <p>הידע המטה - קוגניטיבי הוא ידע שאנחנו מפתחים בנוגע לתהליך הלמידה: ידע על עצמנו כלומדים, על דרישות המשימה שלפנינו, על דרכי הלמידה של עולם התוכן, על הסביבה הלימודית שבתוכה אנחנו פועלים (סביבה פיסית וסביבה חברתית) ועל האסטרטגיות השונות שאנחנו יכולים להפעיל. (מט"ח)</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- The Modal -->
+            <div id="myModal3" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <span class="close">×</span>
+                        <h2>מוטיבציה</h2>
+                    </div>
+                    <div class="modal-body">
+                        <p>(הֲנִיעָה), ובלועזית מוטיבציה, היא מכלול התהליכים אשר מעוררים, מכוונים ומשמרים את ההתנהגות האנושית לעבר מטרה מסוימת. מוטיבציה היא תהליך פנימי המתרחש בתוך הפרט. אותו כוח מביא עמו את הכוונה לבצע פעולה ואת ההתמדה בביצועה. (ויקיפדיה)</p>                          
+                    </div>
+                </div>
+            </div>
+
+            <!-- The Modal -->
+            <div id="myModal4" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <span class="close">×</span>
+                        <h2>תהליך</h2>
+                    </div>
+                    <div class="modal-body">
+                        <p>שינוי מתייחס להבדלים שחלים על מצב עולם מסוים בנקודות זמן שונות. (ויקיפדיה)</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- The Modal -->
+            <div id="myModal5" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <span class="close">×</span>
+                        <h2>חשיבה ביקורתית</h2>
+                    </div>
+                    <div class="modal-body">
+                        <p>חשיבה ביקורתית היא פעילות רפלקטיבית שקולה ומעשית המתרכזת בהחלטה למה להאמין ומה לעשות. בהגדרה זו של חשיבה ביקורתית נכללות גם פעולות יצירתיות כגון ניסוח רעיונות, דרכים חלופיות לראות בעיה, שאילת שאלות, הצעת פתרונות אפשריים ותכניות מחקר. (ברנקו וייס)</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <a id="linkOriginalText" href="http://library.macam.ac.il/study/pdf_files/d12284.pdf" target="_blank">
+                <div id="linkOriginal">
+                    קישור למאמר המקורי
+                </div>
+            </a>
+
+            <a id="exampleText" href="reflectiveExm.html">
+                <div id="example">
+                    אני רוצה לראות דוגמה
+                </div>
+            </a>
+
+        </div>
+    </div>
+
+    <footer>
+        <div id="blackFooter">
+            <p>תוצר זה פותח במסגרת פרויקט גמר לתואר ראשון ב<a href="https://www.hit.ac.il/telem/overview" target="_blank">פקולטה לטכנולוגיות למידה</a>, HIT</p>
+        </div>
+    </footer>
+    
+
+    <!--  סקריפט לאקורדיון  -->
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight){
+              panel.style.maxHeight = null;
+            } else {
+              panel.style.maxHeight = panel.scrollHeight + "px";
+            }
+          });
+        }
+    </script>
+
+    <!-- סקריפט לאנימציה -->
+    <script>
+$(document).ready(function() {
+  $(".animsition").animsition({
+    inClass: 'zoom-in-sm',
+    outClass: 'zoom-out-sm',
+    inDuration: 3500,
+    outDuration: 1000,
+    linkElement: '.animsition-link',
+    // e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
+    loading: true,
+    loadingParentElement: 'body', //animsition wrapper element
+    loadingClass: 'animsition-loading',
+    loadingInner: '', // e.g '<img src="loading.svg" />'
+    timeout: false,
+    timeoutCountdown: 5000,
+    onLoadEvent: true,
+    browser: [ 'animation-duration', '-webkit-animation-duration'],
+    // "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
+    // The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
+    overlay : false,
+    overlayClass : 'animsition-overlay-slide',
+    overlayParentElement : 'body',
+    transition: function(url){ window.location.href = url; }
+  });
+});
+    </script>
+
+
+    <!-- סקריפט לחזרה למעלה -->
+    <script>
+$(function () {
+  $.scrollUp({
+    scrollName: 'scrollUp', // Element ID
+    topDistance: '300', // Distance from top before showing element (px)
+    topSpeed: 300, // Speed back to top (ms)
+    animation: 'slide', // Fade, slide, none
+    animationInSpeed: 200, // Animation in speed (ms)
+    animationOutSpeed: 200, // Animation out speed (ms)
+    scrollText: 'חזור למעלה', // Text for element
+    activeOverlay: false, // Set CSS color to display scrollUp active point, e.g '#00FFFF'
+  });
+});
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,229 @@
+﻿<!doctype html>
+<html lang="he">
+<head>
+    <meta charset="utf-8" />
+    <title>מוק</title>
+    <meta name="description" content="מוק" />
+    <meta name="keywords" content="מוק" />
+    <meta name="author" content="חלי בל, יובל זהר" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+    <!-- CSS -->
+    <link href="styles/reset.css" rel="stylesheet" />
+    <link href="styles/myStyle.css" rel="stylesheet" />
+    <link rel="icon" href="images/favicon.png">
+    <link rel="stylesheet" type="text/css" href="Fonts/OpenSans.css">
+    <link rel="stylesheet" type="text/css" href="styles/scrollup_pill.css">
+    <link rel="stylesheet" type="text/css" href="styles/animsition.css">
+
+    <!-- Scripts -->
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+    <script src="jScripts/animsition.js"></script>
+    <script src="jScripts/jquery.scrollUp.min.js"></script>
+    <script src="jScripts/JavaScript.js"></script>
+    <script src="jScripts/popUp.js"></script>
+
+    <script src="https://d3js.org/d3.v3.min.js"></script>
+    <script src="https://rawgit.com/jasondavies/d3-cloud/master/build/d3.layout.cloud.js"></script>
+
+
+</head>
+<body onload="popUp()">
+    <header>
+        <div id="blackTopNav">
+            <nav id="TopNav">
+                <ul>
+                    <li class="responsiveMenu"><a class="animsition-link" href="index.html" tab index="4"><div id="MenulLogo"><img src="images/moocLogoWhite.svg" /></div></a></li>
+                    <li class="responsiveMenu">
+                        <a href="#" style="padding-right: 2vw;">אסטרטגיות לימוד</a>
+                        <ul>
+                            <li><a href="aknaya.html" class="animsition-link">הקניית ידע</a></li>
+                            <li><a href="reflective.html" class="animsition-link">חשיבה רפלקטיבית</a></li>
+                            <li><a href="brainStorm.html" class="animsition-link">סיעור מוחות</a></li>
+                            <li><a href="conflict.html" class="animsition-link">פיתרון בעיות</a></li>
+                            <li><a href="caseStudy.html" class="animsition-link">חקר מקרה</a></li>
+                        </ul>
+                    </li>
+                    <li class="responsiveMenu">
+                        <a href="#" style="padding-right: 2vw;">דוגמאות תוכן</a>
+                        <ul>
+                            <li><a href="aknayaExm.html" class="animsition-link">הקניית ידע</a></li>
+                            <li><a href="reflectiveExm.html" class="animsition-link">חשיבה רפלקטיבית</a></li>
+                            <li><a href="brainStormExm.html" class="animsition-link">סיעור מוחות</a></li>
+                        </ul>
+                    </li>
+                    <li class="responsiveMenu">
+                        <button id="aboutButton" href="#aboutModal" class="modal-button">אודות</button>
+                    </li>
+                </ul>
+            </nav><div class="clear"></div>
+        </div>
+
+        <div id="yellowDiv">
+            <div class="animsition">
+                <!-- אנימציה -->
+                <div id="yellowHeader">
+                    <div id="yellowTitle">
+                        <h1>סיעור מוחות</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div id="container">
+        <div id="whiteContainer" class="pagesWhiteContainer">
+
+            <!-- The Modal - about -->
+            <div id="aboutModal" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <span class="close">×</span>
+                        <h2>אודות</h2>
+                    </div>
+                    <div class="modal-body">
+                        <div id="aboutImage"><img src="images/moocLogo.svg" /></div>
+                        <div class="aboutText">אתר המשמש כלי עזר לפיתוח MOOC</div><br />
+                        <div class="aboutText">פרויקט גמר, תש"פ</div>
+                        <div id="hitLink"><a href="https://www.hit.ac.il/telem/overview" target="_blank">הפקולטה לטכנולוגיות למידה</a></div>
+                        <div class="creditBox">
+                            <div class="logoImg"><img src="images/hitLogo.jpg" /></div>
+                            <div class="creditText">
+                                <h4>צוות הפרויקט:</h4>
+                                חלי בל ויובל זהר
+                                <h4>מנחות:</h4>
+                                ד"ר חגית מישר-טל ורעות בכר
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="creditBox">
+                            <div class="logoImg"><img src="images/mofetLogo.jpg" /></div>
+                            <div class="creditText">
+                                בשיתוף עם מכון מופ"ת
+                                <br />
+                                נציגי הארגון: דורין עמר פסט, רותי סולומון<br />ואסף עמית
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <p>© כל הזכויות שמורות למכון הטכנולוגי חולון HIT</p>
+                    </div>
+                </div>
+            </div>
+            <!-- end of The Modal - about -->
+
+
+            <div class="grey4">
+                סיעור מוחות היא אסטרטגיה המשמשת ליצירת מספר רעיונות, כדיי לסייע בפתרון בעיה מסוימת. אסטרטגיה זו עדיין משמשת כיום במקומות רבים כטכניקה לעירוב תלמידים לצרכים שונים, כגון העלאת מודעות ופתרון בעיות.
+            </div>
+
+            <div id="iconContainer2">
+                <div class="icon" id="icon4"><div class="iconText">אסטרטגיה הקיימת למעלה מ70 שנה</div></div>
+                <div class="icon" id="icon5"><div class="iconText">בעלת מבנה כללי יציב</div></div>
+            </div>
+            <div class="clear"></div>
+            <div class="darkGrey2">
+                <div id="floatDarkGrey1">לאחר שהבעיה או הנושא מוצג, התלמידים מאורגנים בקבוצות כדי שסיעור המוחות יעלה את כל הרעיונות האפשריים לטובת פתרון הבעיה.</div>
+                <div id="arrowDarkGrey"></div>
+                <div id="floatDarkGrey2">דיונים ברעיונות העולים מתרחשים בד"כ לאחר מפגש סיעור המוחות, ומסתיימים לאחר פרק זמן מוגדר מראש. בכל רעיון ידונו ויבחנו את ההתאמה האידיאלית לטובת הפתרון היעיל ביותר.</div>
+                <div class="clear"></div>
+            </div>
+            <div class="grey4">
+                לפני העלאת סיעור המוחות יש להתאים את מרחב הלמידה, בין אם הוא מקוון ובין אם הוא פיזי, ולשקול בהתאמה את נקודות החוזק, את המחסומים האפשריים, ואת האתגרים הצפויים לעלות.
+            </div>
+            <div id="brainStormImg">
+                <div class="brainStormText" id="brainStormText1">העלאת הבעיה /<br />הצגת הבעיה</div>
+                <div class="brainStormText" id="brainStormText2">זהה את התפקידים של התלמידים בקבוצה</div>
+                <div class="clear"></div>
+                <div class="brainStormText" id="brainStormText6">סקור את סיעור המוחות והענק משוב</div>
+                <div id="brainStormTitle">סיעור מוחות</div>
+                <div class="brainStormText" id="brainStormText3">הגדר לסטודנטים את החוקים ורצף התהליך</div>
+                <div class="clear"></div>
+                <div class="brainStormText" id="brainStormText5">דרג את הרעיונות וההצעות שנוצרו</div>
+                <div class="brainStormText" id="brainStormText4">יצירת סביבה מקוונת מכילה וממוקדת</div>
+                <div class="clear"></div>
+            </div>
+
+            <div id="wordCloudDiv">
+                <h3>יצירת ענן מילים</h3>
+                <div class="cloudText">הזן בתיבת הטקסט מילים וביטויים שרלוונטיים לסיעור מוחות. </div>
+                <div class="cloudText">הפרד כל מילה ברווח.</div>
+                <form>
+                    <textarea id="inputWords" rows="2" cols="20"></textarea>
+                    <div id="btnCenter"><input id="btnGetWords" type="button" onclick="getWordsFunc()" value="טעינה" /></div>
+                </form>
+            </div>
+        </div>
+
+
+        <a id="linkOriginalText" href="https://www.niu.edu/facdev/_pdf/guide/strategies/brainstorming.pdf" target="_blank">
+            <div id="linkOriginal">
+                קישור למאמר המקורי
+            </div>
+        </a>
+
+        <a id="exampleText" href="brainStormExm.html">
+            <div id="example" style="margin-bottom: 60px;">
+                אני רוצה לראות דוגמה
+            </div>
+        </a>
+
+
+    </div>
+    </div>
+
+    <footer>
+        <div id="blackFooter">
+            <p>תוצר זה פותח במסגרת פרויקט גמר לתואר ראשון ב<a href="https://www.hit.ac.il/telem/overview" target="_blank">פקולטה לטכנולוגיות למידה</a>, HIT</p>
+        </div>
+    </footer>
+
+    <!-- סקריפט לאנימציה -->
+    <script>
+$(document).ready(function() {
+  $(".animsition").animsition({
+    inClass: 'zoom-in-sm',
+    outClass: 'zoom-out-sm',
+    inDuration: 3500,
+    outDuration: 1000,
+    linkElement: '.animsition-link',
+    // e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
+    loading: true,
+    loadingParentElement: 'body', //animsition wrapper element
+    loadingClass: 'animsition-loading',
+    loadingInner: '', // e.g '<img src="loading.svg" />'
+    timeout: false,
+    timeoutCountdown: 5000,
+    onLoadEvent: true,
+    browser: [ 'animation-duration', '-webkit-animation-duration'],
+    // "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
+    // The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
+    overlay : false,
+    overlayClass : 'animsition-overlay-slide',
+    overlayParentElement : 'body',
+    transition: function(url){ window.location.href = url; }
+  });
+});
+    </script>
+
+
+    <!-- סקריפט לחזרה למעלה -->
+    <script>
+$(function () {
+  $.scrollUp({
+    scrollName: 'scrollUp', // Element ID
+    topDistance: '300', // Distance from top before showing element (px)
+    topSpeed: 300, // Speed back to top (ms)
+    animation: 'slide', // Fade, slide, none
+    animationInSpeed: 200, // Animation in speed (ms)
+    animationOutSpeed: 200, // Animation out speed (ms)
+    scrollText: 'חזור למעלה', // Text for element
+    activeOverlay: false, // Set CSS color to display scrollUp active point, e.g '#00FFFF'
+  });
+});
+    </script>
+
+</body>
+</html>
